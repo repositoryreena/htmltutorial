@@ -7,23 +7,39 @@
 </head>
 <body style="background-color: lightblue">
     <h1 style="color: purple; text-align: center">&lt;!DOCTYPE html&gt;</h1>
+    <p style="color: gray; text-align: center">&lt;!--This declaration defines the document type and version of HTML being used, which is HTML5. It tells the browser to expect HTML5 code.--&gt;</p>
     <p style="color: purple">element</p>
     <p style="color: green">attribute</p>
     
-        <p><span style="color: purple">&lt;html&gt;</span></p>
+        <p><span style="color: purple">&lt;html</span> <span style="color: green">lang</span>="en"<span style="color: purple">&gt;</span></p>
+        <p style="color: gray">&lt;!--This opening tag marks the beginning of the HTML document. The lang attribute specifies the language of the document, which is English in this case.--&gt;</p>
         <p style="padding-left: 20px;"><span style="color: purple">&lt;head&gt;</span></p>
-        <p style="padding-left: 40px;"><span style="color: purple">&lt;meta charset=”utf-8”&gt;</span></p>
+        <p style="padding-left: 20px; color: gray">&lt;!--The &lt;head&gt; element contains meta-information about the document, such as character encoding, viewport settings, and the document's title.--&gt;</p>
+        <p style="padding-left: 40px;"><span style="color: purple">&lt;meta</span> <span style="color: green">charset</span>=”utf-8”<span style="color: purple">&gt;</span></p>
+        <p style="padding-left: 40px; color: gray">&lt;!--This meta tag sets the character encoding to UTF-8, which is a character encoding standard that supports a wide range of characters from different languages.--&gt;</p>
+        <p style="padding-left: 40px;"><span style="color: purple">&lt;meta</span> <span style="color: green">name</span>=”viewport” <span style="color: green">content</span>="width=device-width, initial-scale=1.0"<span style="color: purple">&gt;</span></p>
+        <p style="padding-left: 40px; color: gray">&lt;!--This meta tag is used for responsive web design. It sets the initial viewport width to the device's width, ensuring that the webpage scales correctly on various devices.--&gt;</p>
+        <p style="padding-left: 40px"><span style="color: purple">&lt;title&gt;</span>Document<span style="color: purple">&lt;/title&gt;</span></p>
+        <p style="color: gray; padding-left: 40px">&lt;!--The &lt;title&gt; element defines the title of the web page, which is displayed in the browser's title bar or tab.--&gt;</p>
         <p style="padding-left: 20px;"><span style="color: purple">&lt;/head&gt;</span></p>
         <p style="padding-left: 20px;"><span style="color: purple">&lt;body</span> <span style="color: green">style</span>=”background-color:lightblue;”<span style="color: purple">&gt;</span></p>
+        <p style="padding-left: 20px; color: gray">The &lt;body&gt; element contains the content of the web page. The style attribute sets the background color of the page to light blue.</p>
     
     <h1 style="padding-left: 60px; color: purple">&lt;h1&gt;</h1>
+    <p style="padding-left: 60px; color: gray">&lt;!--This is a level 1 heading. Headings are used to define the structure and hierarchy of your content. &lt;h1&gt; is the highest level and typically represents the main heading of the page.--&gt;</p>
     <h2 style="padding-left: 60px; color: purple">&lt;h2&gt;</h2>
     <h3 style="padding-left: 60px; color: purple">&lt;h3&gt;</h3>
     <h4 style="padding-left: 60px; color: purple">&lt;h4&gt;</h4>
     <h5 style="padding-left: 60px; color: purple">&lt;h5&gt;</h5>
     <h6 style="padding-left: 60px; color: purple">&lt;h6&gt;</h6>
+    <p style="padding-left: 60px; color: gray">&lt;!--These are headings of varying levels, from 2 to 6, with decreasing importance and size. They are typically used to structure and organize content.  Best practices is to not skip numbers when decreasing heading sizes.--&gt;</p>
+
     <p style="padding-left: 60px; "><span style="color: purple">&lt;p&gt;</span>This is a<br><span style="color: purple">&lt;br&gt;</span>paragraph with a line break.<span style="color: purple">&lt;/p&gt;</span></p>
+    <p style="padding-left: 60px; color: gray">&lt;!-- This is a paragraph element. It is used to define text content and is one of the most common HTML elements. In this example, there's a paragraph with a line break (&lt;br&gt;) inside it. Paragraphs are essential for structuring textual content on a webpage.--&gt;</p>
+
     <span style="padding-left: 60px; color: purple">&lt;hr&gt;</span><hr>
+    <p style="padding-left: 60px; color: gray">&lt;!-- This is a horizontal rule element, used to create a thematic break or divider in the content. It's often used to separate sections of a webpage. The code includes both the HTML tag and the actual horizontal line.--&gt;</p>
+
     <pre>
     <span style="color: purple">&lt;pre&gt;</span>
         My Bonnie lies over the ocean.
@@ -35,22 +51,50 @@
         Oh, bring back my Bonnie to me.
     <span style="color: purple">&lt;/pre&gt;</span>
      </pre>
+     <p style="padding-left: 60px; color: gray">&lt;!-- This is a preformatted text element. It preserves both spaces and line breaks within the content, making it suitable for displaying code or text that requires precise formatting.--&gt;</p>
+
      <p style="padding-left: 60px; "><span style="color: purple">&lt;p</span> <span style="color: green">style</span>="color: blue;"<span style="color: purple">&gt;</span><span style="color:blue;">This is a paragraph.</span><span style="color: purple">&lt;/p&gt;</span></p>
+     <p style="padding-left: 60px; color: gray">&lt;!-- This is a paragraph element with an inline style attribute. The style attribute sets the text color to blue for this paragraph. It demonstrates how inline styles can be used to apply specific styles to individual elements.--&gt;</p>
+
      <p style="padding-left: 60px; "><span style="color: purple">&lt;p</span> <span style="color: green">style</span>="font-family: Courier;"<span style="color: purple">&gt;</span><span style="font-family: Courier;">This is a paragraph.</span><span style="color: purple">&lt;/p&gt;</span></p>
+     <p style="padding-left: 60px; color: gray">&lt;!--  Similar to the previous example, this paragraph uses an inline style to set the font-family to Courier, which is a monospaced font.--&gt;</p>
+
      <p style="text-align: center"><span style="color: purple">&lt;p</span> <span style="color: green">style</span>="text-align: center"<span style="color: purple">&gt;</span><span style="text-align: center">This is a paragraph.</span><span style="color: purple">&lt;/p&gt;</span></p>
+     <p style="text-align: center; color: gray">&lt;!-- This paragraph uses the style attribute to center-align its content. It demonstrates how to change the text alignment of a paragraph.--&gt;</p>
+
      <p style="padding-left: 60px; "><span style="color: purple">&lt;p</span> <span style="color: green">style</span>=”font-size:50px;”<span style="color: purple">&gt;</span><span style="text-align: center"><span style="font-size: 50px;">This is a paragraph.</span></span><span style="color: purple">&lt;/p&gt;</span></p>
+    
+
      <p style="padding-left: 60px; ">WWF’s mission is to stop the <strong><span style="color: purple">&lt;strong&gt;</span>degradation<span style="color: purple">&lt;/strong&gt;</span></strong> of our planet’s natural environment.</p>
+     <p style="padding-left: 60px; color: gray">&lt;!-- This is an element used to indicate strong importance or emphasis within a text. In this example, it's used to highlight the words "degradation" as important.--&gt;</p>
+
      <p style="padding-left: 60px; ">Tokyo is the capital of Japan, the most populous <em><span style="color: purple">&lt;em&gt;</span>metropolitan<span style="color: purple">&lt;/em&gt;</span></em> area in the world.</p>
+     <p style="padding-left: 60px; color: gray">&lt;!-- This is an element used to emphasize text, typically rendering it in italics. In this case, it's applied to the word "metropolitan" for emphasis.--&gt;</p>
+
      <p style="padding-left: 60px; ">HTML is <mark><span style="color: purple">&lt;mark&gt;</span>FUN<span style="color: purple">&lt;/mark&gt;</span></mark> to learn!</p>
+     <p style="padding-left: 60px; color: gray">&lt;!--  This element highlights text as if it's been marked with a highlighter pen. In this case, it emphasizes the word "FUN."--&gt;</p>
+
      <p style="padding-left: 60px; ">H<sub><span style="color: purple">&lt;sub&gt;</span>2<span style="color: purple">&lt;/sub&gt;</span></sub>O is the scientific name for water.</p>
+     <p style="padding-left: 60px; color: gray">&lt;!-- This element is used to subscript text, typically used for chemical formulas or mathematical expressions. Here, it's used for the subscripts in the chemical formula for water (H₂O).--&gt;</p>
+
      <p style="padding-left: 60px; ">My favorite color is <del><span style="color: purple">&lt;del&gt;</span>blue<span style="color: purple">&lt;/del&gt;</span></del> red.</p>
+     <p style="padding-left: 60px; color: gray">&lt;!-- This element represents deleted or removed text. In this example, it's used to show that the word "blue" has been deleted or crossed out.--&gt;</p>
+
      <p style="padding-left: 60px; ">I am so <q><span style="color: purple">&lt;q&gt;</span>cool<span style="color: purple">&lt;q&gt;</span></q>.</p>
+     <p style="padding-left: 60px; color: gray">&lt;!-- This element is used for short inline quotations. It adds quotation marks around the text it encloses. In this case, it emphasizes the word "cool" as a quotation.--&gt;</p>
+
      <blockquote style="padding-left: 60px; " cite=”http://www.worldwildlife.org/who/index.html”><span style="color: purple">&lt;blockquote&gt;</span>
         For 50 years, WWF has been protecting the future of nature. The world’s leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.<span style="color: purple">&lt;/blockquote&gt;</span>
         </blockquote>
+        <p style="padding-left: 60px; color: gray">&lt;!-- This element is used to define a block of text quoted from another source. It often includes a cite attribute that specifies the source of the quote.--&gt;</p>
+
         <span style="padding-left: 60px; color: purple">&lt;bdo </span><span style="color: green">dir</span>="rtl"</span><span style="color: purple">&gt;</span><bdo dir="rtl">What a beautiful day!</bdo><span style="color: purple">&lt;/bdo&gt;</span>
+        <p style="padding-left: 60px; color: gray">&lt;!-- This element is used to override the text direction for its content. In this example, it reverses the text direction for the phrase "What a beautiful day!"--&gt;</p>
+
         <p style="padding-left: 60px; ">The <abbr title="World Health Organization"><span style="color: purple">&lt;abbr</span> <span style="color: green">title</span>="World Health Organization"<span style="color: purple">&gt;</span> WHO<span style="color: purple">&lt;/abbr&gt;</span></abbr> was founded in 1948.</p>
-        <p style="padding-left: 60px; color: gray">&lt;!--This is a comment→</p>
+        <p style="padding-left: 60px; color: gray">&lt;!-- This element is used to define an abbreviation or acronym. It often includes a title attribute that provides the full meaning or description of the abbreviation. In this case, it stands for the "World Health Organization."--&gt;</p>
+
+        <p style="padding-left: 60px; color: gray">&lt;!--This is an HTML comment. Comments are not visible on the webpage but are used to add notes or explanations to the code for developers.→</p>
         
         <table style="width:100%"><p style="padding-left: 60px; color: purple">&lt;table style="width:100%"&gt;</p>
             <tr><p style="padding-left: 80px; color: purple">&lt;tr&gt;</p>
@@ -74,21 +118,30 @@
               <td><p style="color: purple">&lt;td&gt;</p>80<p style="color: purple">&lt;/td&gt;</p></td>
             </tr><p style="padding-left: 80px; color: purple">&lt;/tr&gt;</p>
           </table>
+          <p style="padding-left: 60px; color: gray">&lt;!--These elements are used to create an HTML table for tabular data. &lt;table&gt; defines the table, &lt;tr&gt; defines table rows, &lt;th&gt; defines table header cells, and &lt;td&gt; defines table data cells. Tables are used to organize data in rows and columns.→</p>
+
+
         <ul><p style="color: purple">&lt;ul&gt;</p>
             <li><p style="color: purple">&lt;li&gt;</p>
                 Coffee
             </li><p style="color: purple">&lt;/li&gt;</p>
         </ul><p style="color: purple">&lt;/ul&gt;</p>
+        <p style="padding-left: 60px; color: gray">&lt;!--&lt;ul&gt; defines an unordered (bulleted) list, and &lt;li&gt; defines list items within it. Lists are used to present information in a structured manner.→</p>
+
         <ul style="list-style-type: square"><p style="color: purple">&lt;ul</p> <span style="color: green">style</span>="list-style-type: square"<p style="color: purple">&gt;</p>
             <li><p style="color: purple">&lt;li&gt;</p>
                 Coffee
             </li><p style="color: purple">&lt;/li&gt;</p>
         </ul><p style="color: purple">&lt;/ul&gt;</p>
+        <p style="padding-left: 60px; color: gray">&lt;!--This example sets the list-style-type to square, changing the bullet style for list items.→</p>
+
         <ol><p style="color: purple">&lt;ol&gt;</p>
             <li><p style="color: purple">&lt;li&gt;</p>Coffee<p style="color: purple">&lt;/li&gt;</p></li>
             <li><p style="color: purple">&lt;li&gt;</p>Tea<p style="color: purple">&lt;/li&gt;</p></li>
             <li><p style="color: purple">&lt;li&gt;</p>Milk<p style="color: purple">&lt;/li&gt;</p></li>
             </ol><p style="color: purple">&lt;/ol&gt;</p>
+            <p style="padding-left: 60px; color: gray">&lt;!--This element defines an ordered (numbered) list, and &lt;li&gt; defines list items within it. Ordered lists are used when the order of items matters.→</p>
+
             <ol type="A"><p style="color: purple">&lt;ol</p> <span style="color: green">type</span>="A"<p style="color: purple">&gt;</p>
                 <li><p style="color: purple">&lt;li&gt;</p>Coffee<p style="color: purple">&lt;/li&gt;</p></li>
                 <li><p style="color: purple">&lt;li&gt;</p>Tea<p style="color: purple">&lt;/li&gt;</p></li>
@@ -105,25 +158,49 @@
                         <dt><p style="color: purple">&lt;dt&gt;</p>Milk<p style="color: purple">&lt;/dt&gt;</p></dt>
                         <dd><p style="color: purple">&lt;dd&gt;</p>white cold drink<p style="color: purple">&lt;/dd&gt;</p></dd>
                         </dl><p style="color: purple">&lt;/dl&gt;</p>
+                        <p style="padding-left: 60px; color: gray">&lt;!--These elements are used to create a definition list. &lt;dt&gt; defines terms, and &lt;dd&gt; defines their definitions. It's often used for glossaries or dictionaries.
+                            →</p>
+
+
                         <p>
                             <code><p style="color: purple">&lt;code&gt;</p>
                             var person;
                             <p style="color: purple">&lt;/code&gt;</p></code>
                             </p>
+                            <p style="padding-left: 60px; color: gray">&lt;!--This element is used to display inline code snippets or code-related content. In this example, it's used to highlight code.
+                                →</p>
+
                             <p>
                                 <p style="color: purple">&lt;var&gt;</p><var>
                                 x
                                 </var><p style="color: purple">&lt;/var&gt;</p>
                                 =3+2;
                                 </p>
+                                <p style="padding-left: 60px; color: gray">&lt;!--This element represents a variable in code or a placeholder for user input.
+                                    →</p>
+
                                 <a href="https://www.w3schools.com"><p style="color: purple">&lt;a</p> <span style="color: green">href</span>="https://www.w3schools.com"<p style="color: purple">&gt;</p>This is a link<p style="color: purple">&lt;/a&gt;</p></a>
+                                <p style="padding-left: 60px; color: gray">&lt;!--This is an anchor element used to create hyperlinks. It includes an href attribute that specifies the URL the link points to.
+
+                                    →</p>
+
                                 <img src="smiley.gif" alt=”W3Schools.com” width="104" height="142"><p style="color: purple">&lt;img</p> <span style="color: green">src</span>="smiley.gif" <span style="color: green">alt</span>="W3Schools.com" <span style="color: green">width</span>="104" <span style="color: green">height</span>="142"<p style="color: purple">&gt;</p>
+                                <p style="padding-left: 60px; color: gray">&lt;!--This element is used to display images on a webpage. It includes attributes like src for the image source, alt for alternative text, and width and height for image dimensions.
+
+                                    →</p>
+
 <p><p style="color: purple">&lt;p&gt;</p>
+
+
 <img src="smiley.gif" style="float:right;"><p style="color: purple">&lt;img</p> <span style="color: green">src</span>="smiley.gif" <span style="color: green">style</span>="float:right;"<p style="color: purple">&gt;</p>
 This is a paragraph.
 This paragraph contains an image
 </p><p style="color: purple">&lt;/p&gt;</p>
 <p style="padding-left: 20px;"><span style="color: purple">&lt;/body&gt;</span></p>
 <p><span style="color: purple">&lt;/html&gt;</span></p>
+
+
 </body>
+
+
 </html>
